@@ -16,9 +16,19 @@ document.getElementById('form')
                     'Mensaje Enviado',
                     'Mensaje enviado con exito!',
                     'success'
-                  )
+                )
             }, (err) => {
                 btn.value = 'Enviar';
                 alert(JSON.stringify(err));
             });
     });
+
+const triggerTabList = document.querySelectorAll('.div.tab-content a')
+triggerTabList.forEach(triggerEl => {
+    const tabTrigger = new bootstrap.Tab(triggerEl)
+
+    triggerEl.addEventListener('click', event => {
+        event.preventDefault()
+        tabTrigger.show()
+    })
+})

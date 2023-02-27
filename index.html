@@ -17,36 +17,37 @@
 
 </head>
 
+<header style="height: 180px;">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color:rgb(255, 255, 255);">Valentín Rodríguez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarCollapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:rgb(255, 255, 255);" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:rgb(255, 255, 255);" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:rgb(255, 255, 255);" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:rgb(255, 255, 255);" href="#cursos">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:rgb(255, 255, 255);" href="#contacto">Contacto</a>
+                    </li>
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="color:rgb(255, 255, 255);">Valentín Rodríguez</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarCollapse">
-            <ul class="navbar-nav ms-auto mb-2 mb-md-0 ">
-                <li class="nav-item">
-                    <a class="nav-link" style="color:rgb(255, 255, 255);" href="#inicio">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:rgb(255, 255, 255);" href="#experiencia">Experiencia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:rgb(255, 255, 255);" href="#habilidades">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:rgb(255, 255, 255);" href="#cursos">Cursos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:rgb(255, 255, 255);" href="#contacto">Contacto</a>
-                </li>
-
-            </ul>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>
 
 <!--Body -->
 
@@ -132,20 +133,19 @@
                                     SOLID</a>
 
                                 <a class="list-group-item list-group-item-action" id="list-home-list"
-                                    data-bs-toggle="list" href="#list-home" role="tab"
+                                    data-bs-toggle="list" href="#Hexagonal" role="tab"
                                     aria-controls="list-home">Hexagonal Arquitecture</a>
 
                                 <a class="list-group-item list-group-item-action" id="list-profile-list"
-                                    data-bs-toggle="list" href="#list-profile" role="tab"
-                                    aria-controls="list-profile">CQRS</a>
+                                    data-bs-toggle="list" href="#CQRS" role="tab" aria-controls="list-profile">CQRS</a>
 
                                 <a class="list-group-item list-group-item-action" id="list-messages-list"
-                                    data-bs-toggle="list" href="#list-messages" role="tab"
-                                    aria-controls="list-messages">Event Drive Arquitecture</a>
+                                    data-bs-toggle="list" href="#EDA" role="tab" aria-controls="list-messages">Event
+                                    Drive Arquitecture</a>
 
                                 <a class="list-group-item list-group-item-action" id="list-settings-list"
-                                    data-bs-toggle="list" href="#list-settings" role="tab"
-                                    aria-controls="list-settings">Domain Driver Design</a>
+                                    data-bs-toggle="list" href="#DDD" role="tab" aria-controls="list-settings">Domain
+                                    Driver Design</a>
                             </div>
                         </div>
                         <div class="col-sm-8 my-3">
@@ -157,24 +157,24 @@
                                     mantenible, robusto, y tolerante a cambios. Con una alta cohesión en nuestras
                                     clases, pero un bajo acoplamiento entre ellas.</div>
 
-                                <div class="tab-pane fade" id="list-home" role="tabpanel"
+                                <div class="tab-pane fade" id="Hexagonal" role="tabpanel"
                                     aria-labelledby="list-home-list">La Arquitectura Hexagonal nos ayuda a definir una
                                     serie de restricciones que nos ayudan en términos de
                                     mantenibilidad, cambiabilidad, testabilidad, y escalabilidad del código.</div>
 
-                                <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                <div class="tab-pane fade" id="CQRS" role="tabpanel"
                                     aria-labelledby="list-profile-list">Cuando una aplicación crece demasiado en
                                     términos de personas programando en ella, o en términos de necesidad de rendimiento,
                                     es fácil acabar con código muy lioso y poco estructurado. CQRS nos ayuda a solventar
                                     este tipo de problemas.</div>
 
-                                <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                <div class="tab-pane fade" id="EDA" role="tabpanel"
                                     aria-labelledby="list-messages-list">Event Drive Arquitecture ayuda a definir tu
                                     estructura de colas ya sea con RabbitMQ o en AWS, y gestionar los problemas
                                     derivados del consumo de eventos para que puedas empezar a migrar porciones de tu
                                     monolito a pequeños servicios autónomos y escalables.</div>
 
-                                <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                <div class="tab-pane fade" id="DDD" role="tabpanel"
                                     aria-labelledby="list-settings-list">Si queremos modelar un sistema complejo
                                     necesitamos complementar principios y técnicas como los principios SOLID o la
                                     Arquitectura Hexagonal con una parte estratégica. Es ahí donde entra Domain-Driven
